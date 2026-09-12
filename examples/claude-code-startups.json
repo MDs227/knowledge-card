@@ -1,0 +1,91 @@
+{
+  "meta": { "source": "Claude 官方 blog", "author": "Michael Segner", "date": "2026.08.20", "total": 4 },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "Claude Code 新創指南",
+      "subCn": "快速成長的新創公司如何用 Claude Code 推出產品",
+      "subEn": "A Startup Guide to Shipping with Claude Code",
+      "note": "Anthropic 訪談 15 家高速成長新創，整理出 5 大 AI 原生營運原則",
+      "list": {
+        "heading": "五大原則", "headingEn": "5 Principles",
+        "items": [
+          { "icon": "rocket", "cn": "人人都能發布", "en": "Everyone ships" },
+          { "icon": "gear", "cn": "把瑣事自動化", "en": "Automate the tedium" },
+          { "icon": "verify", "cn": "信任，但要驗證", "en": "Trust, but verify" },
+          { "icon": "bricks", "cn": "為重建而建造", "en": "Build for rebuilding" },
+          { "icon": "cycle", "cn": "原型、內部自用、產品化", "en": "Prototype, dogfood, productionize" }
+        ]
+      },
+      "stats": {
+        "heading": "亮眼數字",
+        "items": [
+          { "icon": "chart", "name": "ClickHouse", "desc": "多推出 30% 功能" },
+          { "icon": "pie", "name": "Clay 100%", "desc": "bug 分類自動化" }
+        ]
+      },
+      "punch": "推出功能的速度，堪比十倍人力的組織"
+    },
+    {
+      "type": "numbers",
+      "title": "數字會說話",
+      "subEn": "The Numbers",
+      "thesis": "15 家 AI 原生新創的自陳成果（原文未提供第三方量測）",
+      "items": [
+        { "icon": "db", "name": "ClickHouse", "value": "+30%", "desc": "多推出 30% 的功能" },
+        { "icon": "chart", "name": "Omni", "value": "2–3x", "desc": "工程生產力提升 2 到 3 倍" },
+        { "icon": "bug", "name": "Clay", "value": "100%", "desc": "bug 分類已全面自動化" },
+        { "icon": "shield", "name": "Artemis Security", "value": "6,000+", "desc": "每週超過 6,000 個 PR" }
+      ],
+      "strip": {
+        "icon": "people", "heading": "受訪公司 / 15 startups",
+        "text": "Artemis Security・Cainex・Clay・ClickHouse・Cognition・Commure・Crosby・Emergent・Harvey・Heidi・Higgsfield・Omni・Parahelp・Translucent・Zingage"
+      },
+      "punch": "想看未來的工作樣貌？看新創今天怎麼運作就知道了",
+      "punchIcon": "clock"
+    },
+    {
+      "type": "panels",
+      "chip": "原則3",
+      "title": "驗證工具箱：四個必備零件",
+      "subEn": "The verification toolkit",
+      "cols": 2,
+      "panels": [
+        { "icon": "doc", "heading": "CLAUDE.md 不變量", "items": [
+          "把「不能改的東西」放 repo 根目錄",
+          "每個 session 開始都會讀",
+          "Zingage 寫下 567 行「團隊如何思考」"], "src": "Zingage" },
+        { "icon": "cycle", "heading": "迴路 Loops", "items": [
+          "重複執行直到停止條件達成",
+          "停止條件要能自我驗證",
+          "經典案例：flaky test agent"] },
+        { "icon": "flask", "heading": "黃金集 Golden set", "items": [
+          "一組經驗證的問答配對",
+          "防漂移，也能評估未來模型",
+          "關鍵用例都該有多組 eval"] },
+        { "icon": "gate", "heading": "Hooks = 硬性閘門", "items": [
+          "生命週期固定時點觸發",
+          "每次都執行，不管模型怎麼決定",
+          "例：測試過才能 commit"] }
+      ],
+      "quote": { "text": "沒有可靠的驗證方式，就沒有資格談自動化。", "by": "原則三的一句話結論" }
+    },
+    {
+      "type": "checklist",
+      "title": "總結：AI 原生新創的核對清單",
+      "subEn": "The checklist — 5 takeaways",
+      "items": [
+        { "icon": "rocket", "heading": "人人都能發布", "text": "用 MCP／CLI 接上團隊日常工具，用 skill 和 CLAUDE.md 維持一致性。" },
+        { "icon": "gear", "heading": "把瑣事自動化", "text": "讓 agent 吃掉機械性的 80%。重點是建造迴路，不只是部署程式碼。" },
+        { "icon": "verify", "heading": "信任，但要驗證", "text": "不變量寫進 CLAUDE.md、黃金集防漂移、hooks 當硬性閘門。修正原則，不修正個例。" },
+        { "icon": "bricks", "heading": "為重建而建造", "text": "git worktree 讓重建變便宜，plan mode 在動手前先取得共識。" },
+        { "icon": "cycle", "heading": "原型、自用、產品化", "text": "內部 agent → 團隊先用 → 推成客戶產品。建造方式與建造內容互相增強。" }
+      ],
+      "links": { "icon": "code", "items": [
+        "claude.com/programs/startups（新創計畫與額度）",
+        "academy.claude.com/code/webinars（線上研討會）",
+        "claude.com/community（社群）"] },
+      "punch": "現在的護城河，必須是能夠自我改善"
+    }
+  ]
+}
